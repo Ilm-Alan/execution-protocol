@@ -30,7 +30,7 @@ An execution protocol is a job description for an AI agent: what to build, how i
 
 ## Protocol Structure (under 100 lines)
 
-- **Instructions**: How the agent operates. Read PROGRESS.md first, update it when work completes. Check git log for recent work. Only read files relevant to current task.
+- **Instructions**: How the agent operates. Read PROGRESS.md first, update it when work completes. Commit after each file change. Check git log for recent work. Only read files relevant to current task.
 - **Mission**: 1-3 lines. Job framing ("Your job is to..."), target users, why it matters.
 - **Architecture**: How it fits together. Key technical decisions stated, not debated.
 - **Components**: What to build. One line each—name and essence.
