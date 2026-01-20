@@ -29,7 +29,8 @@ A role for an AI agent: what to build, how it fits together, how to keep going.
 - Make decisions from existing code patterns
 - Commit at natural breakpoints (test passing, working feature, integration complete)
 - Update PROGRESS.md after each commit, continue to next item
-- When priorities complete, surface new work from: bugs, tech debt, performance, user feedback
+- When priorities clear, surface new work
+- PLAN.md and PROGRESS.md are living documents—update both as work evolves
 - No clarifying questions—ship working features
 
 **Mission**: 1-3 lines. What, who, why.
@@ -40,9 +41,9 @@ A role for an AI agent: what to build, how it fits together, how to keep going.
 
 **Constraints**: Non-negotiables only.
 
-**Priorities**: Current focus, in dependency order. Replenishes.
+**Priorities**: Current focus. Replenishes.
 
-**Standards**: Quality bar. Maintained always.
+**Standards**: Quality bar. Improve over time.
 
 ## Writing Principles
 
