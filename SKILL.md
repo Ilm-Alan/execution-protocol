@@ -51,14 +51,3 @@ A job description for an AI agent: what to build, how it fits together, when it'
 
 **No filler**
 - Cut: "Prefer working software over perfection", "Start simple", "Future integrations"
-
-## Finish Checklist
-
-- [ ] Instructions: autonomous, no questions, references PROGRESS.md?
-- [ ] Mission: clear what, who, why in 1-3 lines?
-- [ ] Architecture: decisions stated, not options listed?
-- [ ] Components: one line each?
-- [ ] Constraints: requirements, not suggestions?
-- [ ] Build Order: names only, sequenced?
-- [ ] Done When: concrete, verifiable?
-- [ ] Total: under 100 lines?
