@@ -4,11 +4,10 @@ A skill that generates execution protocols—complete specs for AI agents workin
 
 ## Features
 
-- **7-step process** — Explore → Ask → Approaches → Derive → Draft → Cut → Output
+- **5-step process** — Explore → Ask → Approaches → Derive → Write
 - **7-section protocol structure** — Instructions, Mission, Architecture, Components, Constraints, Build Order, Done When
 - **State management** — PLAN.md for the spec, PROGRESS.md for tracking across sessions
-- **Anti-filler guidance** — Explicit markers of vague writing to avoid
-- **Quality checklist** — 7-point verification before delivery
+- **Anti-filler guidance** — Concrete examples of vague writing to avoid
 
 ## Installation
 
@@ -65,7 +64,7 @@ Every generated protocol contains:
 | Section | Purpose |
 |---------|---------|
 | **Instructions** | How the agent operates autonomously—build without asking, make decisions from code |
-| **Mission** | What + why + who in 1-3 lines |
+| **Mission** | What, who, why in 1-3 lines |
 | **Architecture** | Technical decisions stated, not debated |
 | **Components** | What to build—one line each |
 | **Constraints** | Non-negotiables only |
