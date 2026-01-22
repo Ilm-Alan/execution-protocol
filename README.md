@@ -1,11 +1,11 @@
-# Execution Protocol Skill for Claude Code, Codex, and Gemini CLI
+# Project Spec
 
-A skill that generates execution protocols—complete specs for AI agents working on projects. Works with [Claude Code](https://github.com/anthropics/claude-code) (Anthropic), [Codex](https://github.com/openai/codex) (OpenAI), and [Gemini CLI](https://github.com/google-gemini/gemini-cli) (Google). Replaces vague project descriptions with concrete, actionable agent instructions.
+Create a project spec for AI agents to work from autonomously. Works with [Claude Code](https://github.com/anthropics/claude-code) (Anthropic), [Codex](https://github.com/openai/codex) (OpenAI), and [Gemini CLI](https://github.com/google-gemini/gemini-cli) (Google).
 
 ## Features
 
 - **5-step process** — Explore → Ask → Approaches → Derive → Write
-- **7-section protocol structure** — Instructions, Mission, Architecture, Components, Constraints, Build Order, Done When
+- **7-section structure** — Instructions, Mission, Architecture, Components, Constraints, Build Order, Done When
 - **State management** — PLAN.md for the spec, PROGRESS.md for tracking across sessions
 - **Anti-filler guidance** — Concrete examples of vague writing to avoid
 
@@ -14,13 +14,13 @@ A skill that generates execution protocols—complete specs for AI agents workin
 ### Claude Code
 
 ```bash
-mkdir -p ~/.claude/skills/execution-protocol && curl -o ~/.claude/skills/execution-protocol/SKILL.md https://raw.githubusercontent.com/ilm-alan/execution-protocol/main/SKILL.md
+mkdir -p ~/.claude/skills/project-spec && curl -o ~/.claude/skills/project-spec/SKILL.md https://raw.githubusercontent.com/ilm-alan/project-spec/main/SKILL.md
 ```
 
 ### Codex
 
 ```bash
-mkdir -p ~/.codex/skills/execution-protocol && curl -o ~/.codex/skills/execution-protocol/SKILL.md https://raw.githubusercontent.com/ilm-alan/execution-protocol/main/SKILL.md
+mkdir -p ~/.codex/skills/project-spec && curl -o ~/.codex/skills/project-spec/SKILL.md https://raw.githubusercontent.com/ilm-alan/project-spec/main/SKILL.md
 ```
 
 ### Gemini CLI
@@ -38,7 +38,7 @@ First, enable the experimental skills feature in `~/.gemini/settings.json`:
 Then install the skill:
 
 ```bash
-mkdir -p ~/.gemini/skills/execution-protocol && curl -o ~/.gemini/skills/execution-protocol/SKILL.md https://raw.githubusercontent.com/ilm-alan/execution-protocol/main/SKILL.md
+mkdir -p ~/.gemini/skills/project-spec && curl -o ~/.gemini/skills/project-spec/SKILL.md https://raw.githubusercontent.com/ilm-alan/project-spec/main/SKILL.md
 ```
 
 Run `/skills list` to verify the skill was loaded.
@@ -48,18 +48,18 @@ Run `/skills list` to verify the skill was loaded.
 Invoke the skill when starting a new project:
 
 ```
-/execution-protocol
+/project-spec
 ```
 
 Or reference it contextually:
 
 ```
-Using the execution protocol skill, create a spec for a CLI tool that manages AWS credentials
+Using the project spec skill, create a spec for a CLI tool that manages AWS credentials
 ```
 
-## The Protocol Structure
+## Structure
 
-Every generated protocol contains:
+Every generated spec contains:
 
 | Section | Purpose |
 |---------|---------|
@@ -73,14 +73,14 @@ Every generated protocol contains:
 
 ## Output Files
 
-- `PLAN.md` — The execution protocol (under 100 lines)
+- `PLAN.md` — The project spec (under 100 lines)
 - `PROGRESS.md` — State tracking updated by the executing agent
 
 ## Example
 
 **Prompt:**
 ```
-/execution-protocol
+/project-spec
 ```
 
 **Conversation:**

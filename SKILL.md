@@ -1,18 +1,18 @@
 ---
-name: execution-protocol
-description: Create an execution protocol—a complete spec for an AI agent owning a project.
+name: project-spec
+description: Create a project spec for AI agents to work from autonomously.
 ---
 
-# Execution Protocol
+# Project Spec
 
-A role for an AI agent: what to build, how it fits together, how to keep going.
+What to build, how it fits together, how to keep going.
 
 ## Process
 
 1. **Explore**: Check context—files, docs, commits, patterns.
-2. **Ask**: Ask many questions (multiple choice when possible) until you can fill every protocol section.
+2. **Ask**: Ask many questions (multiple choice when possible) until you can fill every section.
 3. **Approaches**: If multiple valid paths exist, present 2-3 options. Lead with your recommendation.
-4. **Derive**: Map conversation to protocol sections:
+4. **Derive**: Map conversation to spec sections:
    - Mission: what, who, why
    - Architecture: technical decisions
    - Components: what exists
@@ -21,7 +21,7 @@ A role for an AI agent: what to build, how it fits together, how to keep going.
    - Standards: quality bar
 5. **Write**: Output `PLAN.md`. Create `PROGRESS.md` with completed/remaining work.
 
-## Protocol Structure (under 100 lines)
+## Spec Structure (under 100 lines)
 
 **Instructions**:
 - Read PROGRESS.md to know what's done, check git log for context
